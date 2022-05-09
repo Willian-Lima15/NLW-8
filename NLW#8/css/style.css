@@ -168,9 +168,19 @@ nav.scroll button path {
   stroke: white;
 }
 
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 /*##############NAVIGATION Expended######################*/
 body.menu-expanded {
   overflow: hidden;
+}
+
+body.menu-expanded > :not(nav) {
+  display: none;
 }
 
 menu,
