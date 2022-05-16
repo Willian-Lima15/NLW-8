@@ -10,12 +10,21 @@
   --paragraph: hsl(210, 9%, 31%);
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
+  --bg-light: hsl(180,14%, 97%);
   
   font-size: 62.5%; /* 1rem = 10px */
 
   --nav-heigth:17.2rem;
 }
 
+section {
+  padding-block: 10rem;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 /*##########HEADER###########*/
 
@@ -32,6 +41,8 @@ body {
   text-align: center;
 
   overflow: overlay;
+
+  background-color: var(--bg-light);
 }
 
 .wrapper {
@@ -292,7 +303,13 @@ body.menu-expanded button path {
   margin-bottom: 6rem;
 }
 
-.card {
+#servieces .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#services .card {
   padding: 2.4rem;
   text-align: left;
 
@@ -301,4 +318,8 @@ body.menu-expanded button path {
   border: 0.1rem solid var(--brand-light);
   box-sizing: border-box;
   border-radius: 0.6rem;
+}
+
+#services .card h3 {
+  margin-block: 1.6rem;
 }
