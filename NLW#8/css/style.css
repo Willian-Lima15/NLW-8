@@ -80,7 +80,7 @@ ul {
   margin-bottom: 3.2rem;
 }
 
-header button {
+#home button {
   background: var(--primary-color);
   border-radius: 4rem;
   border: none;
@@ -99,7 +99,7 @@ header button {
   margin-right: auto;
 }
 
-header img {
+#home img {
   width: 26.4rem;
   display: block;
   margin-inline: auto;
@@ -118,7 +118,7 @@ header img {
   z-index: -1;
 }
 
-.stats {
+#home .stats {
   width: 32.7rem;
   padding-block: 4rem;
 
@@ -132,7 +132,7 @@ header img {
   gap: 6rem;
 }
 
-.stat h3 {
+#home .stat h3 {
   font-size: 4.8rem;
   color: var(--headline);
   line-height: 130%;
@@ -206,7 +206,11 @@ body.menu-expanded .open-menu{
 body.menu-expanded .menu,
 body.menu-expanded .close-menu {
   opacity: 1;
-  visibility: hidden;
+  visibility: visible;
+}
+
+.menu {
+  transform: translateY(100%);
 }
 
 body.menu-expanded .menu {
@@ -219,6 +223,9 @@ body.menu-expanded .menu {
   height: 100vh;
 
   padding-top: var(--nav-heigth);
+
+  transition: opacity 300ms;
+  transform: translateY(0);
 }
 
 body.menu-expanded nav {
